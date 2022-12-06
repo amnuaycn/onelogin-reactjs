@@ -1,3 +1,25 @@
+## Configuration file
+####1. src/index.js
+
+```
+const oidcConfig = {
+  authority: 'https://xxxx.onelogin.com/oidc/2/',
+  clientId: 'YOUR_CLIENT_ID',
+  clientSecret: 'YOUR_CLIENT_SECRET',
+  redirectUri: 'http://localhost:3000'
+};
+ ```
+ 
+#### src/CallApi.js 
+```
+const response = await fetch("http://localhost:6091/account/profile/info", {
+                    method: 'POST',
+                    headers: {
+                        Authorization: `Bearer ${token}`,
+                    },
+                });
+ ```                
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
