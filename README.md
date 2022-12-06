@@ -1,5 +1,5 @@
 ## Configuration file
-####1. src/index.js
+####1. react/src/index.js
 
 ```
 const oidcConfig = {
@@ -10,7 +10,7 @@ const oidcConfig = {
 };
  ```
  
-#### src/CallApi.js 
+#### react/src/CallApi.js 
 ```
 const response = await fetch("http://localhost:6091/account/profile/info", {
                     method: 'POST',
